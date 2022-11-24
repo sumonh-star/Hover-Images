@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hover-Image</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            width: 100%;
+            height: 100vh;
+            background:linear-gradient(rgba(15, 15, 210, 0.741),rgba(0, 128, 0, 0.741)), url(images/background.jpg);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            position: relative;
+        }
+        h1{
+            font-size: 60px;
+            text-transform: uppercase;
+            color:#fff;
+            text-align: center;
+            margin-top: 40px !important;
+        }
+        .body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            gap:30px;
+            flex-wrap: wrap;
+            position: absolute;
+            top:0;
+            left:8%;
+        }
+        .img-box{
+            width: 300px;
+            height: 380px;
+            position: relative;
+            background-color: aqua;
+            border-radius: 15px;
+            overflow: hidden;
+            position: relative;
+        }
+        .img-box img{
+            width: 100%;
+            height: 100%;
+        }
+        .layer{
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            bottom: -380px;
+            left: 0;
+            border-radius: 15px;
+            background:linear-gradient(rgba(255, 0, 0, 0.547),rgba(0, 0, 255, 0.744));
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            transition:.4s;
+        }
+        .img-box:hover .layer{
+            bottom:0;
+        }
+        .layer .icon-box{
+            background-color: azure;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .layer .icon-box i{
+            font-size: 25px;
+            padding:10px 15px;
+            border: 1px solid rgba(229, 77, 77, 0.167);
+            width: 50px;
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            justify-content: center;
+            transition: .4s;
+            color:rgb(229, 77, 77);
+        }
+        .layer .icon-box i:hover{
+            color:#fff;
+            background-color: rgb(229, 77, 77);
+        }
+    </style>
+</head>
+<body>
+    <h1>hover-image</h1>
+    <div class="body">
+    <div class="img-box">
+        <img src="images/img-1.jpg">
+        <div class="layer">
+            <div class="icon-box">
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-linkedin-in"></i>
+                <i class="fa-brands fa-dribbble"></i>
+            </div>
+        </div>
+    </div>
+    <div class="img-box">
+        <img src="images/img-2.jpg">
+        <div class="layer">
+            <div class="icon-box">
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-linkedin-in"></i>
+                <i class="fa-brands fa-dribbble"></i>
+            </div>
+        </div>
+    </div>
+    <div class="img-box">
+        <img src="images/img-3.jpg">
+        <div class="layer">
+            <div class="icon-box">
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-linkedin-in"></i>
+                <i class="fa-brands fa-dribbble"></i>
+            </div>
+        </div>
+    </div>
+    <div class="img-box">
+        <img src="images/img-4.jpg">
+        <div class="layer">
+            <div class="icon-box">
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-linkedin-in"></i>
+                <i class="fa-brands fa-dribbble"></i>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+
